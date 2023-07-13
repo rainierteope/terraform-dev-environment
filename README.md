@@ -26,6 +26,30 @@ $env:AWS_ACCESS_KEY_ID = "<YOUR_ACCESS_KEY>"
 $env:AWS_SECRET_ACCESS_KEY = "<YOUR_SECRET_ACCESS_KEY>"
 ```
 
+**Generate a key-pair for SSH access**
+```bash
+ssh-keygen -t rsa
+Generating public/private rsa key pair.
+Enter file in which to save the key (/home/user/.ssh/id_rsa):
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /home/rainierteope/.ssh/id_rsa
+Your public key has been saved in /home/rainierteope/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:Yret8QBHzczYfAniM9vhfVubXh1kpv23RL+GcLn81xE rainierteope@hp-laptop
+The key's randomart image is:
++---[RSA 3072]----+
+|        . .      |
+|       . X . .   |
+|        * O o  + |
+|       . * +  *E |
+|      + S o ..o+o|
+|     . = o . +.+B|
+|        + . + ++O|
+|         =   +o.B|
+|        . .   o=.|
++----[SHA256]-----+
+```
 
 **Create a terraform.tfvars for your variables**
 ```python
