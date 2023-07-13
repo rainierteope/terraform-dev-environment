@@ -101,8 +101,9 @@ resource "aws_instance" "dev_env_ec2" {
 
   provisioner "local-exec" {
     command = templatefile(local.ssh_config_file[lower(var.device_os)], {
-      hostname = self.public_ip
-      user = "ubuntu"
+      hostname     = "${local.project_name}-ec2"
+      ip_address   = self.public_ip
+      user         = "ubuntu"
       identityfile = var.public_key_path
     })
     interpreter = lower(var.device_os) == "linux" ? ["bash", "-c"] : ["Powershell", "-Command"]

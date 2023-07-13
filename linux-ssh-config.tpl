@@ -1,7 +1,7 @@
 cat << EOF >> ~/.ssh/config
 
 Host ${hostname}
-  Hostname ${hostname}
+  Hostname ${ip_address}
   User ${user}
   IdentityFile ${identityfile}
 EOF
