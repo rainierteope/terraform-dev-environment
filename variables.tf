@@ -31,3 +31,9 @@ variable "device_os" {
   description = "The operating system of the local device"
   default = "Linux"
 }
+
+variable "aws_profile" {
+  type = string
+  description = "The profile configured in .aws"
+  default = null
+}

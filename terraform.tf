@@ -9,7 +9,7 @@ terraform {
 
 provider "aws" {
   region  = "ap-southeast-1"
-  profile = "rainierteope-aws-main"
+  profile = var.aws_profile != null ? var.aws_profile : null
 }
 
 provider "random" {}
