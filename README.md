@@ -1,7 +1,5 @@
 # Create a VS Code development environment in AWS using Terraform
 
-<br>
-
 ## Usage
 
 Clone the repository to your local machine.
@@ -15,9 +13,16 @@ cd terraform-dev-environment
 ```
 
 Export your AWS credentials
+Linux
 ```bash
 export AWS_ACCESS_KEY_ID="<YOUR_ACCESS_KEY>"
 export AWS_SECRET_ACCESS_KEY="<YOUR_SECRET_ACCESS_KEY>"
+```
+
+Windows
+```powershell
+$env:AWS_ACCESS_KEY_ID = "<YOUR_ACCESS_KEY>"
+$env:AWS_SECRET_ACCESS_KEY = "<YOUR_SECRET_ACCESS_KEY>"
 ```
 
 
