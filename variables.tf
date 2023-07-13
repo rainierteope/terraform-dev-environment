@@ -1,3 +1,9 @@
+variable "region" {
+  type = string
+  description = "The region where the instances will be created"
+  default = "ap-southeast-1"
+}
+
 variable "vpc_cidr_block" {
   type        = string
   description = "CIDR block for the VPC"

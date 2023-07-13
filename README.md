@@ -29,6 +29,7 @@ $env:AWS_SECRET_ACCESS_KEY = "<YOUR_SECRET_ACCESS_KEY>"
 
 **Create a terraform.tfvars for your variables**
 ```python
+region          = "ap-southeast-1"     # The AWS region to use. Defaults to ap-southeast-1
 vpc_cidr_block  = "10.0.0.0/16"        # The VPC CIDR block
 personal_ip     = "111.111.111.111/32" # Your public IP
 public_key_path = "~/.ssh/key.pub"     # Your public key
