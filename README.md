@@ -1,4 +1,4 @@
-#Create a VS Code development environment in AWS using Terraform
+# Create a VS Code development environment in AWS using Terraform
 
 <br>
 
